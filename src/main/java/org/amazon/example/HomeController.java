@@ -40,4 +40,8 @@ public class HomeController {
     public String home() {
         return "Spring Boot REST API is running! Visit /welcome for the welcome message.";
     }
+    @GetMapping("/about")
+    public String about() {
+        return "This project is developed using Spring Boot.";
+}
 }
