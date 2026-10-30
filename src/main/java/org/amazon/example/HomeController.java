@@ -44,4 +44,8 @@ public class HomeController {
     public String about() {
         return "This project is developed using Spring Boot.";
 }
+    @GetMapping("/contact")
+    public String contact() {
+        return "Contact us for more information!";
+    }
 }
