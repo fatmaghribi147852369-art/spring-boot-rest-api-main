@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Recuperation du code') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Nettoyage et compilation') {
+            steps {
+                sh 'mvn clean compile'
+            }
+        }
+    }
+}
